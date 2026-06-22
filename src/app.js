@@ -14,7 +14,9 @@ function jugar(jugador) {
 
     if (jugador === computer) {
         ganador = "¡Empate! 🤝";
-    } else if (ganaA[jugador].includes(computer)) {
+    }
+    
+    if (jugador !== computer && ganaA[jugador].includes(computer)) {
         ganador = "¡Ganaste! 🎉";
     }
    
